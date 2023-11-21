@@ -7,30 +7,33 @@
 
 BOOL CheckInternetAccess(void);
 
-bool main(void)
+int main(int argc, char* argv, char* envp)
 {
-	bool connection_status;
+	int state;
 
-	connection_status = CheckInternetAccess();
+	if (CheckInternetAccess() != 0)
+		state = TRUE;
+	else
+		state = FALSE;
 
-	return connection_status;
+	return state;
 }
 
 
 BOOL CheckInternetAccess(void)
 {
-	BOOL status = FALSE;
+	BOOL state;
 
-	status = InternetGetConnectedState(0, 0);
-
-	if (status == 0)
+	if (InternetGetConnectedState(nullptr, 0) == 0)
 	{
-		printf_s("Error 1.1: No Internet");
+		printf_s("Error 1.1: No Internet\n");
+		state = FALSE;
 	}
 	else
 	{
-		printf_s("Success: Internet Connection");
+		printf_s("Success: Internet Connection\n");
+		state = TRUE;
 	}
 
-	return status;
+	return state;
 }
