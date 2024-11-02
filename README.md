@@ -8,6 +8,6 @@ You can read my analysis in my blog:
 - [Lab06-0(1,2,3,4)](https://p4nd3m1cb0y0xd.github.io/pma/2023/11/28/pma-going-even-further-lab06-1234.html)
 - [Lab07-02](https://p4nd3m1cb0y0xd.github.io/pma/2024/04/20/pma-going-even-further-lab07-02.html)
 - [Lab11-01](Comming soon)
-- [Lab12-01 Part 1](Comming soon)
+- [Lab12-01](Comming soon)
 - [Lab14-01](Comming soon)
 - [Lab15-01](Comming soon)
